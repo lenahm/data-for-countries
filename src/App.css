@@ -17,6 +17,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+  text-transform: uppercase;
   margin: 80px auto;
   background: white;
   border-radius: 50px;
@@ -26,10 +27,20 @@
 h1 {
   font-family: 'Koulen', cursive;
   font-size: 100px;
-  text-transform: uppercase;
   letter-spacing: 8px;
   margin-top: 30px; 
   border-bottom: 5px dotted black;
+}
+
+h2 {
+  font-family: 'Koulen', cursive;
+  font-size: 50px;
+  letter-spacing: 6px;
+  margin: -25px 0 -10px 0;
+}
+
+h3 {
+  letter-spacing: 4px;
 }
 
 main {
@@ -40,34 +51,49 @@ main {
 
 .country-search {
   padding: 30px; 
-  border-bottom: 3px dotted black;
 }
 
-.country-search #submit #input-country,
-.country-search #submit #search-btn {
-  padding: 5px; 
+.country-search #input-country {
+  width: 600px;
+  font-family: inherit;
+  font-size: 16px;
   color: black;
+  padding: 5px; 
   border: 1px solid black;
   border-radius: 5px;
 }
 
-.country-search #submit #input-country {
-  width: 600px;
-  font-size: 16px;
-  font-family: inherit;
+.country-search .alert {
+  padding: 5px; 
+  margin-top: 10px; 
+  color: white; 
+  background-color: darkblue;
+  border-radius: 5px;
 }
 
-.country-search #submit #search-btn {
-  cursor: pointer;
-  font-size: 15.5px;
-  margin-left: 5px;
-}
-
-.country-search #submit #input-country:focus,
-.country-search #submit #search-btn:focus {
+.country-search #input-country:focus {
   outline: none;
 }
 
 .country-information {
   padding: 30px; 
+  border-top: 3px dotted black;
+}
+
+.country-information img {
+  width: 8%;
+  height: 8%;
+  margin-bottom: 10px;
+}
+
+.country-information .region-and-subregion {
+  letter-spacing: 2px;
+  margin-top: -10px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid black;
+}
+
+/* utility classes */
+.hide {
+  display: none; 
 }
