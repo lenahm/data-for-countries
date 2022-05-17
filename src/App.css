@@ -1,38 +1,73 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+
+* {
+  margin: 0; 
+  padding: 0; 
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#root {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+}
+
+.container {
+  width: 1400px;
+  height: 80vh;
+  overflow: hidden;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  text-align: center;
+  margin: 80px auto;
+  background: white;
+  border-radius: 50px;
+  opacity: 0.93;
 }
 
-.App-link {
-  color: #61dafb;
+h1 {
+  font-family: 'Koulen', cursive;
+  font-size: 100px;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  margin-top: 30px; 
+  border-bottom: 5px dotted black;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+main {
+  background-color: #e2e1e1;
+  border-radius: 20px;
+  margin: 30px;
+}
+
+.country-search {
+  padding: 30px; 
+  border-bottom: 3px dotted black;
+}
+
+.country-search #submit #input-country,
+.country-search #submit #search-btn {
+  padding: 5px; 
+  color: black;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.country-search #submit #input-country {
+  width: 600px;
+  font-size: 16px;
+  font-family: inherit;
+}
+
+.country-search #submit #search-btn {
+  cursor: pointer;
+  font-size: 15.5px;
+  margin-left: 5px;
+}
+
+.country-search #submit #input-country:focus,
+.country-search #submit #search-btn:focus {
+  outline: none;
+}
+
+.country-information {
+  padding: 30px; 
 }

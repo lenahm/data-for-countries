@@ -1,25 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
+import { FaSearch } from 'react-icons/fa';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <h1>Data for Countries</h1>
+      <main>
+        <div className="country-search">
+          <form id="submit">
+            <input type="text" id="input-country" placeholder="Which country are you looking for?" />
+            <button type="submit" id="search-btn"><FaSearch /></button>
+          </form>
+        </div>
+        <div className="country-information">Test Test Test</div>
+      </main>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
