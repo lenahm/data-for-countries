@@ -97,3 +97,74 @@ main {
 .hide {
   display: none; 
 }
+
+/* responsive design for tablets */
+
+@media (max-width: 1200px) {
+  .container {
+    width: 700px;
+  }
+
+  h1 {
+    font-size: 60px;
+  }
+
+  h2 {
+    font-size: 40px;
+  }
+
+  .country-search #input-country {
+    width: 400px;
+  }
+
+  .country-information img {
+    width: 20%;
+    height: 20%;
+    margin-top: 10px; 
+  }
+}
+
+/* responsive design for smartphones */
+
+@media (max-width: 400px) {
+  .container {
+    width: 350px;
+  }
+
+  h1 {
+    font-size: 40px;
+    margin-top: 10px;
+    border-bottom: 3px dotted black;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  h3 {
+    font-size: 0.8rem;
+  }
+
+  .country-search {
+    padding: 10px; 
+  }
+
+  .country-search #input-country {
+    width: 235px;
+    font-size: 14px;
+  }
+
+  .country-search .alert {
+    font-size: 0.7rem;
+  }
+
+  .country-information img {
+    width: 30%;
+    height: 30%;
+    margin-top: 10px; 
+  }
+
+  .country-information p {
+    font-size: 0.8rem;
+  }
+}
