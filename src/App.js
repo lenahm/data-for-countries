@@ -47,8 +47,8 @@ const App = () => {
               <img src={result[0].flags.png} /> 
               <h3>{result[0].name.official}</h3><br />
               <p className="region-and-subregion"><FaLocationArrow /> {result[0].region} | {result[0].subregion}</p><br />
-              <p classname="country-detail-information"><FaCompass /> {result[0].area} km<sup>2</sup></p><br />
-              <p classname="country-detail-information"><FaUser /> {result[0].population} inhabitants</p><br />
+              <p classname="country-detail-information"><FaCompass /> {result[0].area.toLocaleString()} km<sup>2</sup></p><br />
+              <p classname="country-detail-information"><FaUser /> {result[0].population.toLocaleString()} inhabitants</p><br />
               <p classname="country-detail-information"><FaHouseUser /> {result[0].capital[0]}</p><br />
               <p classname="country-detail-information"><FaCommentDots /> {Object.values(result[0].languages).map(language => <span>{language} </span>)}</p>
             </div>
